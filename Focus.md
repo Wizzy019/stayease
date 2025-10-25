@@ -107,35 +107,57 @@ Prepare your mind for future backend connections
 📁 stayease/
 
 stayease/
+src/
 │
-├── public/
-│ └── index.html
+├── App.jsx
 │
-├── src/
-│ ├── assets/
-│ │ └── images/ # Optional - room or service images
+├── layouts/
+│ ├── AuthLayout.jsx // wraps login/register pages
+│ └── DashboardLayout.jsx // shared sidebar + topbar wrapper
+│
+├── components/
+│ ├── Navbar.jsx // public nav (landing page)
+│ ├── Footer.jsx
+│ ├── Sidebar.jsx // dashboard menu
+│ ├── DashboardHeader.jsx
+│ ├── RoomCard.jsx
+│ ├── ServiceCard.jsx
+│ ├── StatCard.jsx // for dashboard metrics
+│ └── ProtectedRoute.jsx // role-based route guard
+│
+├── pages/
+│ ├── Landing.jsx
 │ │
-│ ├── components/
-│ │ ├── Navbar.jsx
-│ │ ├── Footer.jsx
-│ │ ├── RoomCard.jsx
-│ │ ├── ServiceCard.jsx
-│ │ └── BookingForm.jsx
+│ ├── auth/
+│ │ ├── Login.jsx
+│ │ └── Register.jsx
 │ │
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ ├── Bookings.jsx
-│ │ ├── Services.jsx
-│ │ └── Profile.jsx
-│ │
-│ ├── data/
-│ │ ├── rooms.json # Fake data (title, price, image, etc.)
-│ │ └── services.json # Fake data for services
-│ │
-│ ├── App.jsx
-│ ├── index.js
-│ ├── App.css
-│ └── main.jsx (if using Vite)
+│ ├── dashboard/
+│ │ ├── user/
+│ │ │ ├── UserDashboard.jsx
+│ │ │ ├── MyBookings.jsx
+│ │ │ └── Profile.jsx
+│ │ │
+│ │ ├── provider/
+│ │ │ ├── ProviderDashboard.jsx
+│ │ │ ├── MyListings.jsx
+│ │ │ └── Earnings.jsx
+│ │ │
+│ │ └── admin/
+│ │ ├── AdminDashboard.jsx
+│ │ ├── ManageUsers.jsx
+│ │ ├── ManageListings.jsx
+│ │ └── Reports.jsx
+│
+├── context/
+│ └── AuthContext.jsx // stores current user + role
+│
+├── data/
+│ ├── rooms.json
+│ └── services.json
+│
+└── main.jsx / index.js
+
 │
 ├── package.json
 ├── tailwind.config.js
