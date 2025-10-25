@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Cozy Studio Apartment",
+    "location": "Awka, Anambra",
+    "price": 15000,
+    "image": "/assets/images/room1.jpg",
+    "description": "A compact and well-furnished studio apartment ideal for students or short stays."
+  },
+  {
+    "id": 2,
+    "title": "Modern Two-Bedroom Flat",
+    "location": "Enugu, Enugu State",
+    "price": 28000,
+    "image": "/assets/images/room2.jpg",
+    "description": "Spacious two-bedroom flat with balcony view, close to main transport routes."
+  },
+  {
+    "id": 3,
+    "title": "Luxury Lodge Suite",
+    "location": "Asaba, Delta",
+    "price": 35000,
+    "image": "/assets/images/room3.jpg",
+    "description": "Fully air-conditioned suite with Wi-Fi and 24/7 room service. Perfect for business travelers."
+  },
+  {
+    "id": 4,
+    "title": "Shared Hostel Room",
+    "location": "Nnewi, Anambra",
+    "price": 7000,
+    "image": "/assets/images/room4.jpg",
+    "description": "Affordable shared room for students, with Wi-Fi and laundry access."
+  },
+  {
+    "id": 5,
+    "title": "Shortlet Apartment",
+    "location": "Port Harcourt, Rivers",
+    "price": 25000,
+    "image": "/assets/images/room5.jpg",
+    "description": "Stylish apartment perfect for weekend or holiday stays, fully furnished."
+  }
+]

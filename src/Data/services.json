@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Plumbing Services",
+    "provider": "FixPro Nigeria",
+    "rating": 4.8,
+    "price": 5000,
+    "image": "/assets/images/plumber.jpg",
+    "description": "Reliable plumbing repair and installation for homes and lodges."
+  },
+  {
+    "id": 2,
+    "name": "Electrical Repairs",
+    "provider": "BrightSpark Tech",
+    "rating": 4.6,
+    "price": 4500,
+    "image": "/assets/images/electrician.jpg",
+    "description": "Fast response for wiring, sockets, and appliance repairs."
+  },
+  {
+    "id": 3,
+    "name": "Home Cleaning",
+    "provider": "PureTouch Services",
+    "rating": 4.9,
+    "price": 4000,
+    "image": "/assets/images/cleaner.jpg",
+    "description": "Deep cleaning for apartments, hostels, and offices."
+  },
+  {
+    "id": 4,
+    "name": "Interior Decoration",
+    "provider": "StyleEdge Interiors",
+    "rating": 4.7,
+    "price": 12000,
+    "image": "/assets/images/decorator.jpg",
+    "description": "Transform your living space with elegant and affordable designs."
+  },
+  {
+    "id": 5,
+    "name": "Carpentry & Furniture",
+    "provider": "WoodWorks NG",
+    "rating": 4.5,
+    "price": 6000,
+    "image": "/assets/images/carpenter.jpg",
+    "description": "Custom furniture and repairs for home or office spaces."
+  }
+]
