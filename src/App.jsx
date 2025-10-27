@@ -2,10 +2,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Landing from './Pages/Landing'
 import Login from './Pages/auth/Login'
-import UserDashboard from './Pages/dashboard/user/UserDashboard'
 import ProviderDashboard from './Pages/dashboard/provider/ProviderDashboard'
 import AdminDashboard from './Pages/dashboard/admin/AdminDashboard'
 import ProtectedRoute from './components/ProtectedRoute'
+import DashboardLayout from './layouts/DashboardLayout'
+import DashboardHome from './Pages/dashboard/user/DashboardHome'
+import Bookings from './Pages/dashboard/user/Bookings'
+import Payments from './Pages/dashboard/user/Payments'
+import Profile from './Pages/dashboard/user/Profile'
 
 
 
@@ -14,7 +18,15 @@ function App() {
         <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/dashboard/user' element={<ProtectedRoute allowedRoles={["user"]}><UserDashboard /></ProtectedRoute>}/>
+        <Route path='/dashboard/user'
+         element={<ProtectedRoute allowedRoles={["user"]}>
+          <DashboardLayout/>
+        </ProtectedRoute>}>
+              <Route index element={<DashboardHome />} />
+              <Route path='bookings' element={<Bookings />} />
+              <Route path='payments' element={<Payments />} />
+              <Route path='profile' element={<Profile />} />
+          </Route>
         <Route path='/dashboard/provider' element={<ProtectedRoute allowedRoles={["provider"]}><ProviderDashboard /></ProtectedRoute>}/>
         <Route path='/dashboard/admin' element={<ProtectedRoute allowedRoles={["admin"]}><AdminDashboard /></ProtectedRoute>}/>
       </Routes>

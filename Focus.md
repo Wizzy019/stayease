@@ -546,11 +546,11 @@ Deliverable checklist (copy into Trello / Notion)
 
 [✔] Tailwind setup verified
 
-[ ] Routing & AuthContext implemented
+[✔] Routing & AuthContext implemented
 
-[ ] Login + role redirect working
+[✔] Login + role redirect working
 
-[ ] Shared components (Navbar, Sidebar, Cards)
+[✔] Shared components (Navbar, Sidebar, Cards)
 
 [ ] rooms.json & services.json loaded
 
