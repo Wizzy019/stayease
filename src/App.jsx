@@ -23,10 +23,10 @@ function App() {
           <DashboardLayout/>
         </ProtectedRoute>}>
               <Route index element={<DashboardHome />} />
-              <Route path='bookings' element={<Bookings />} />
               <Route path='payments' element={<Payments />} />
               <Route path='profile' element={<Profile />} />
           </Route>
+        <Route path='dashboard/user/bookings' element={<Bookings />} />
         <Route path='/dashboard/provider' element={<ProtectedRoute allowedRoles={["provider"]}><ProviderDashboard /></ProtectedRoute>}/>
         <Route path='/dashboard/admin' element={<ProtectedRoute allowedRoles={["admin"]}><AdminDashboard /></ProtectedRoute>}/>
       </Routes>

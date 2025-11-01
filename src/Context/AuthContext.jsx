@@ -7,7 +7,10 @@ import { createContext, useContext, useState } from "react"
         const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null);
 
         const login = (email, role) => {
-            const userData = {email, role}
+            const userData = {
+                id: Date.now(),
+                email, 
+                role}
             setUser(userData);
             localStorage.setItem("user", JSON.stringify(userData))
         }
