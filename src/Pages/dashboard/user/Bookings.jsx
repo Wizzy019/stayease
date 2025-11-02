@@ -1,15 +1,13 @@
 import { useEffect, useState } from "react";
 import Sidebar from "../../../components/Sidebar";
 
-import { useAuth } from "../../../Context/AuthContext";
+// import { useAuth } from "../../../Context/AuthContext";
 
 
 function Bookings() {
 
 
-   const { user } = useAuth();
-
-   console.log(user);
+  //  const { user } = useAuth(); //filter function will be added later to use useAuth
    
 
 const [bookings, setBookings] = useState([]);

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 201,
+    "userId": 11,
+    "amount": 336000,
+    "date": "2025-10-18T10:20:00Z",
+    "paymentMethod": "transfer",
+    "status": "paid",
+    "reference": "STY-9921AX",
+    "bookingId": 1,
+    "notes": "Full payment for 12-month lease"
+  },
+  {
+    "id": 202,
+    "userId": 12,
+    "amount": 35000,
+    "date": "2025-11-21T09:15:00Z",
+    "paymentMethod": "card",
+    "status": "pending",
+    "reference": "STY-4529BT",
+    "bookingId": 2,
+    "notes": "Awaiting confirmation from bank"
+  },
+  {
+    "id": 203,
+    "userId": 13,
+    "amount": 24000,
+    "date": "2025-11-22T12:30:00Z",
+    "paymentMethod": "wallet",
+    "status": "paid",
+    "reference": "STY-7740KD",
+    "bookingId": 6,
+    "notes": "Paid using wallet balance"
+  },
+  {
+    "id": 204,
+    "userId": 14,
+    "amount": 36000,
+    "date": "2025-10-25T14:55:00Z",
+    "paymentMethod": "card",
+    "status": "paid",
+    "reference": "STY-5520QF",
+    "bookingId": 4,
+    "notes": "Weekend booking payment"
+  },
+  {
+    "id": 205,
+    "userId": 15,
+    "amount": 25000,
+    "date": "2025-11-10T08:05:00Z",
+    "paymentMethod": "transfer",
+    "status": "refunded",
+    "reference": "STY-1148ZZ",
+    "bookingId": 5,
+    "notes": "Payment refunded after cancellation"
+  },
+  {
+    "id": 206,
+    "userId": 16,
+    "amount": 7000,
+    "date": "2025-12-01T12:10:00Z",
+    "paymentMethod": "wallet",
+    "status": "paid",
+    "reference": "STY-6619PL",
+    "bookingId": 3,
+    "notes": "First month initial payment"
+  }
+]

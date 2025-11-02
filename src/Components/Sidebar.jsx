@@ -55,7 +55,7 @@ function Sidebar() {
             </div>
            <div className='md:hidden'> <FontAwesomeIcon icon={faBars} onClick={() => setOpen(true)} className='text-2xl'/></div>
         </div>
-        <nav className={`fixed flex flex-col h-screen bg-gray-100 top-0 right-0 p-4
+        <nav className={`fixed flex flex-col h-screen bg-blue-100 top-0 right-0 p-4
         text-2xl font-medium transition-transform duration-700 ease-in-out md:left-0 md:top-20 md:w-1/4 md:translate-x-0 md:opacity-100
         ${open ? "opacity-100 translate-x-0 overflow-hidden" : "opacity-0 translate-x-full" }`}>
     <div className='md:hidden'><FontAwesomeIcon icon={faTimes} onClick={() => setOpen(false)}/></div>
@@ -66,7 +66,7 @@ function Sidebar() {
         end={item.name === "Dashboard"}
         onClick={() => setOpen(false)}
         className={({ isActive }) => isActive ?
-         "flex items-center justify-start gap-1 p-4 m-2 bg-[#d4f2ff] rounded": 
+         "flex items-center justify-start gap-1 p-4 m-2 bg-[#81dcec] rounded": 
          "flex items-center justify-start gap-1 p-4 m-2 bg-inherit"}
         > 
         {item.icon}

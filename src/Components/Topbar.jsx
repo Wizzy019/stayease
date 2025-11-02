@@ -11,10 +11,10 @@ function Topbar() {
 
   return (
     <div>
-       <div className='flex justify-between mx-3 mb-6 p-4'>
+       <div className='flex justify-between my-2 mx-4 p-4'>
     {!greet && <h1 className='font-semibold text-2xl md:text-3xl'>
-        Welcome, <br />
-        {user?.email || "Guest"}
+        Welcome, 
+          {user?.email || "Guest"}
         👋
       </h1>}
      </div>
