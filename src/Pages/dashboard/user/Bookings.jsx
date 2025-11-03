@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import Sidebar from "../../../components/Sidebar";
+import { useData } from "../../../Context/DataContext";
 
 // import { useAuth } from "../../../Context/AuthContext";
 
@@ -10,13 +10,10 @@ function Bookings() {
   //  const { user } = useAuth(); //filter function will be added later to use useAuth
    
 
-const [bookings, setBookings] = useState([]);
+const { bookings } = useData();
 
-useEffect(()=>{
-  fetch("/src/Data/bookings.json")
-  .then(res => res.json())
-  .then(data => setBookings(data))
-},[])
+const userBookings = bookings.filter(b => b.userId);// for now
+
 
 
   const statusColor = {
@@ -28,14 +25,13 @@ useEffect(()=>{
 
   return (
     <div className="overflow-hidden md:flex md:flex-1 md:gap-8">
-    <Sidebar />
     <main className="p-2 md:min-w-2/3 md:flex md:flex-col md:items-center md:justify-center ">
     <div className="flex flex-1 items-center justify-between w-full my-4">
       <h1 className="text-3xl font-bold">Bookings</h1>  
       <button className="bg-blue-500 text-white p-2 rounded hover:bg-blue-400 duration-500">New Booking</button>
     </div>
     <input type="search" placeholder="Search..." className=" p-2 rounded border w-full"/>
-    {bookings.length === 0 ? ( // for now...
+    {userBookings.length === 0 ? ( // for now...
       <p>No bookings yet</p>
     ) : (
       <div className="overflow-x-auto w-full">
@@ -51,7 +47,7 @@ useEffect(()=>{
          </tr>
         </thead>
         <tbody>
-          { bookings.map((b, userId) => {
+          { userBookings.map((b, userId) => {
             const key = userId
             return(
               <tr key={key} className="border text-center">

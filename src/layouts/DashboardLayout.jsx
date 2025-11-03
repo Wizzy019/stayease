@@ -13,7 +13,7 @@ function DashboardLayout() {
 
 
   return (
-    <div className='flex flex-col md:flex-row h-screen'>
+    <div className='flex flex-col md:flex-row h-screen bg-[#fffbfb]'>
        <Sidebar />
       <div className='flex flex-col flex-1 overflow-y-scroll'>
          {hide &&  <Topbar />}

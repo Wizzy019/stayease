@@ -1,17 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useData } from "../../../Context/DataContext";
 
 function UserPayment() {
 
-    const [payments, setPayments] = useState([]);
-
-    useEffect(() => {
-      fetch("/src/Data/payments.json")
-      .then(res => res.json())
-      .then(data => setPayments(data))
-    },[]);
-    
-
-    const userPayments = payments.filter(p => p.userId); // for now
+   const { payments } = useData();
+   
+   const userPayments = payments.filter(p => p.userId); // for now
     
     const sortedPayments = userPayments.sort((a, b) => 
       new Date(b.date) - new Date(a.date));

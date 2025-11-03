@@ -25,8 +25,8 @@ function App() {
               <Route index element={<DashboardHome />} />
               <Route path='payments' element={<ProtectedRoute allowedRoles={["user"]}><Payments /></ProtectedRoute>} />
               <Route path='profile' element={<ProtectedRoute allowedRoles={["user"]}><Profile /></ProtectedRoute>} />
+              <Route path='bookings' element={<ProtectedRoute allowedRoles={["user"]}><Bookings /></ProtectedRoute>} />
           </Route>
-        <Route path='dashboard/user/bookings' element={<Bookings />} />
         <Route path='/dashboard/provider' element={<ProtectedRoute allowedRoles={["provider"]}><ProviderDashboard /></ProtectedRoute>}/>
         <Route path='/dashboard/admin' element={<ProtectedRoute allowedRoles={["admin"]}><AdminDashboard /></ProtectedRoute>}/>
       </Routes>

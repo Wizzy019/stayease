@@ -1,4 +1,4 @@
-[
+{"payments":[
   {
     "id": 201,
     "userId": 11,
@@ -65,4 +65,4 @@
     "bookingId": 3,
     "notes": "First month initial payment"
   }
-]
+]}

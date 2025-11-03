@@ -73,13 +73,12 @@ function Sidebar() {
         {item.name}
         </NavLink>
             ))}
-            <button
+    </nav>
+    {/* <button
     onClick={handleLogout}
-    className='text-start'
     >
     Logout
-    </button>
-    </nav>
+    </button> */}
     </aside>
   )
 }
