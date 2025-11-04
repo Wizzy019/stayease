@@ -1,3 +1,4 @@
+import InViewAnimator from "../../../components/InViewAnimator";
 import { useAuth } from "../../../Context/AuthContext";
 import { useData } from "../../../Context/DataContext";
 
@@ -24,12 +25,13 @@ function UserPayment() {
   return (
    <>
     <h1 className='text-pretty font-bold text-2xl p-2'>Payments</h1>
+    <InViewAnimator>
     <div className='flex flex-col text-pretty'>
       <div className='p-2 bg-blue-200 mx-5 my-3 rounded md:w-max md:px-8'>
         <p className='text-2xl font-bold'>₦{thisMonthTotal.toLocaleString()}</p>
         <p>Total spent this month</p>
       </div>
-    <div className='md:hidden'>
+        <div className='md:hidden'>
         {sortedPayments.map((p) => {
         const readableDate = new Date(p.date).toDateString()
         const key = p.id;
@@ -44,7 +46,6 @@ function UserPayment() {
         )
       })}
     </div>
-
     <div className='hidden md:block'>
       <table className='w-full bg-white rounded border-2 shadow overflow-hidden'>
         <thead className='bg-gray-50 font-semibold'>
@@ -73,7 +74,8 @@ function UserPayment() {
         </tbody>
       </table>
     </div>
-    </div>  
+    </div> 
+    </InViewAnimator>
    </>
   )
 }

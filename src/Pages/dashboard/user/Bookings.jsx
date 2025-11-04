@@ -1,6 +1,7 @@
 import Sidebar from "../../../components/Sidebar";
 import { useData } from "../../../Context/DataContext";
 import { useAuth } from "../../../Context/AuthContext";
+import InViewAnimator from "../../../components/InViewAnimator";
 
 
 function Bookings() {
@@ -35,7 +36,8 @@ const userBookings = bookings.filter(b => b.userId === user.id);
       <p>No bookings yet</p>
     ) : (
       <>
-       <div className='md:hidden'>
+      <InViewAnimator>
+      <div className='md:hidden'>
         {userBookings.map((b) => {
         const key = b.id;
         return(
@@ -49,6 +51,7 @@ const userBookings = bookings.filter(b => b.userId === user.id);
         )
       })}
     </div>
+      </InViewAnimator>
     <div className="overflow-x-auto w-full flex items-center justify-center">
         <table className="w-full hidden md:block">
         <thead>

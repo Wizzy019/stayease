@@ -1,6 +1,7 @@
 import { useData } from "../../../Context/DataContext";
-import { useAuth } from "../../../Context/AuthContext"
+import { useAuth } from "../../../Context/AuthContext";
 import Topbar from "../../../components/Topbar";
+import InViewAnimator from "../../../components/InViewAnimator";
 
 
 
@@ -32,9 +33,12 @@ function DashboardHome() {
     <div className="bg-blue-200 p-2 h-screen w-full text-pretty">
       <div className="grid grid-cols-2 bg-white rounded p-4 
       items-center justify-evenly gap-2 md:grid-cols-3">
-        <StatsCard label="Active Bookins" value={activeBookingsCount}/>
+        <InViewAnimator>
+          <StatsCard label="Active Bookins" value={activeBookingsCount}/>
+        </InViewAnimator>
       </div>
-      <div className=" bg-white my-4 rounded">
+      <InViewAnimator>
+       <div className=" bg-white my-4 rounded">
         <h2 className="text-2xl font-bold p-2">Recent Bookings</h2>
        <div className="flex flex-col md:flex-row p-2 gap-2">
         {recentBookings.map((r, userId) => {
@@ -46,7 +50,8 @@ function DashboardHome() {
          </div>)
         })}
        </div>
-      </div>
+      </div> 
+      </InViewAnimator>
     </div>
     </>
     

@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCreditCard, faHome, faUser } from '@fortawesome/free-regular-svg-icons';
 import { faBars, faBriefcase, faRightFromBracket, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-import Logo from '../assets/logo.png'
-
-
+import Logo from '../assets/logo.png';
 
 function Sidebar() {
 
