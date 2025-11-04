@@ -6,6 +6,7 @@ import { useData } from '../../../Context/DataContext';
 import { faKey, faQuestion, faShield, faUser } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-regular-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import Avater from '../../../components/Avater';
 
 function UserProfile() {
 
@@ -19,7 +20,7 @@ function UserProfile() {
   }
 
 
-  const userEmail = user?.email
+  const userName = user?.name
 
   const userBookings = bookings.filter(b => b.userId) // for now 
   const userPayments = payments.filter(p => p.userId) // for now
@@ -30,7 +31,7 @@ function UserProfile() {
   const totalSpent = userPayments.reduce((sum, p) => sum + p.amount, 0)
 
   const StatsCard = ( {label, value }) => (
-    <div className='p-2 w-max bg-white rounded shadow-lg text-pretty text-center'>
+    <div className='p-2 w-max bg-white rounded shadow-lg text-pretty text-center mx-2'>
           <p className='text-sm'>{label}</p>
           <p className='text-2xl font-semibold'>{value}</p>
         </div>
@@ -49,9 +50,9 @@ function UserProfile() {
   return (
     <main className='flex flex-col p-2 text-pretty'>
       <div className='w-full flex flex-col md:flex-row items-center my-4 rounded p-2 bg-blue-500'>
-        <p className='p-2 bg-blue-400 size-15 rounded-full text-3xl text-center text-white m-2'>U</p>
+        <Avater name={user.name}/>
         <span className='mx-4 text-center md:text-start'>
-          <p className='p-2 text-3xl font-bold text-white'>{userEmail}</p>
+          <p className='p-2 text-3xl font-bold text-white'>{userName}</p>
         <p className='p-2 text-white/70 font-semibold'>{user?.role}</p>
         </span>
       </div>
@@ -74,7 +75,8 @@ function UserProfile() {
       
      <button
     onClick={handleLogout}
-    className='bg-red-500 text-2xl text-white p-2 w-1/2 my-3 mx-auto rounded'
+    className='bg-red-500 text-2xl text-white p-2 w-1/2 my-3 
+    mx-auto rounded'
     >
     Logout
     </button>

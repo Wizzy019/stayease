@@ -1,17 +1,16 @@
 import { useData } from "../../../Context/DataContext";
-// import { useAuth } from "../../../Context/AuthContext"
-import DashboardLayout from "../../../layouts/DashboardLayout"
+import { useAuth } from "../../../Context/AuthContext"
 import Topbar from "../../../components/Topbar";
 
 
 
 function DashboardHome() {
 
-  // const { user } = useAuth();
+  const { user } = useAuth();
 
    const { bookings } = useData();
 
-  const userBookings = bookings.filter(b => b.userId);// for now
+  const userBookings = bookings.filter(b => b.userId === user.id);// for now
 
   const activeBookings = userBookings.filter(b => b.status === "active");
   const activeBookingsCount = activeBookings.length
@@ -26,12 +25,11 @@ function DashboardHome() {
         </div>
   );
   
-  
 
   return (
     <>
     <Topbar />
-    <main className="bg-blue-200 p-2 h-screen w-full text-pretty">
+    <div className="bg-blue-200 p-2 h-screen w-full text-pretty">
       <div className="grid grid-cols-2 bg-white rounded p-4 
       items-center justify-evenly gap-2 md:grid-cols-3">
         <StatsCard label="Active Bookins" value={activeBookingsCount}/>
@@ -49,7 +47,7 @@ function DashboardHome() {
         })}
        </div>
       </div>
-    </main>
+    </div>
     </>
     
   )

@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../Context/AuthContext'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCreditCard, faHome, faUser } from '@fortawesome/free-regular-svg-icons';
-import { faBars, faBriefcase, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faBriefcase, faRightFromBracket, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from '../assets/logo.png'
 
@@ -55,10 +55,11 @@ function Sidebar() {
             </div>
            <div className='md:hidden'> <FontAwesomeIcon icon={faBars} onClick={() => setOpen(true)} className='text-2xl'/></div>
         </div>
-        <nav className={`fixed flex flex-col h-screen bg-blue-100 top-0 right-0 p-4
+        <nav className={`fixed flex flex-col justify-between h-screen bg-blue-100 top-0 right-0 p-4
         text-2xl font-medium transition-transform duration-700 ease-in-out md:left-0 md:top-20 md:w-1/4 md:translate-x-0 md:opacity-100
         ${open ? "opacity-100 translate-x-0 overflow-hidden" : "opacity-0 translate-x-full" }`}>
-    <div className='md:hidden'><FontAwesomeIcon icon={faTimes} onClick={() => setOpen(false)}/></div>
+    <div>
+        <div className='md:hidden'><FontAwesomeIcon icon={faTimes} onClick={() => setOpen(false)}/></div>
         {items.map((item) => (
             <NavLink
         key={item.name}
@@ -73,12 +74,14 @@ function Sidebar() {
         {item.name}
         </NavLink>
             ))}
-    </nav>
-    {/* <button
+    </div>
+    <button
     onClick={handleLogout}
     >
+    <FontAwesomeIcon icon={faRightFromBracket}/>
     Logout
-    </button> */}
+    </button>
+    </nav>
     </aside>
   )
 }

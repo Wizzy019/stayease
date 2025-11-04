@@ -1,10 +1,13 @@
+import { useAuth } from "../../../Context/AuthContext";
 import { useData } from "../../../Context/DataContext";
 
 function UserPayment() {
 
+  const { user } = useAuth();
+
    const { payments } = useData();
    
-   const userPayments = payments.filter(p => p.userId); // for now
+   const userPayments = payments.filter(p => p.userId === user.id); // for now
     
     const sortedPayments = userPayments.sort((a, b) => 
       new Date(b.date) - new Date(a.date));
@@ -29,7 +32,7 @@ function UserPayment() {
     <div className='md:hidden'>
         {sortedPayments.map((p) => {
         const readableDate = new Date(p.date).toDateString()
-        const key = p.userId;
+        const key = p.id;
         return(
           <div key={key} className='p-2 bg-blue-200 mx-5 my-3 rounded'>
             <p>{p.reference}</p>
@@ -56,7 +59,7 @@ function UserPayment() {
         <tbody>
           {sortedPayments.map((p) => {
             const readableDate = new Date(p.date).toDateString()
-            const key = p.userId;
+            const key = p.id;
             return(
               <tr key={key} className='border-b text-center'>
                 <td className='p-2'>{readableDate}</td>

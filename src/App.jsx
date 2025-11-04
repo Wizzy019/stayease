@@ -10,6 +10,7 @@ import DashboardHome from './Pages/dashboard/user/DashboardHome'
 import Bookings from './Pages/dashboard/user/Bookings'
 import Payments from './Pages/dashboard/user/Payments'
 import Profile from './Pages/dashboard/user/Profile'
+import Register from './Pages/auth/Register'
 
 
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
         <Route path='/' element={<Landing/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/register' element={<Register />}/>
         <Route path='/dashboard/user'
          element={<ProtectedRoute allowedRoles={["user"]}>
           <DashboardLayout/>

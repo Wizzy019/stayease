@@ -1,18 +1,16 @@
 import Sidebar from "../../../components/Sidebar";
 import { useData } from "../../../Context/DataContext";
-
-// import { useAuth } from "../../../Context/AuthContext";
+import { useAuth } from "../../../Context/AuthContext";
 
 
 function Bookings() {
 
 
-  //  const { user } = useAuth(); //filter function will be added later to use useAuth
-   
+const { user } = useAuth(); //filter function will be added later to use useAuth
 
 const { bookings } = useData();
 
-const userBookings = bookings.filter(b => b.userId);// for now
+const userBookings = bookings.filter(b => b.userId === user.id);
 
 
 
@@ -23,8 +21,10 @@ const userBookings = bookings.filter(b => b.userId);// for now
     cancelled: "bg-red-100 text-red-700"
   }
 
+
+
   return (
-    <div className="overflow-hidden md:flex md:flex-1 md:gap-8">
+    <div className="overflow-hidden md:flex md:flex-1 items-center justify-center md:gap-8">
     <main className="p-2 md:min-w-2/3 md:flex md:flex-col md:items-center md:justify-center ">
     <div className="flex flex-1 items-center justify-between w-full my-4">
       <h1 className="text-3xl font-bold">Bookings</h1>  
@@ -34,8 +34,23 @@ const userBookings = bookings.filter(b => b.userId);// for now
     {userBookings.length === 0 ? ( // for now...
       <p>No bookings yet</p>
     ) : (
-      <div className="overflow-x-auto w-full">
-        <table className="w-full">
+      <>
+       <div className='md:hidden'>
+        {userBookings.map((b) => {
+        const key = b.id;
+        return(
+          <div key={key} className='p-2 bg-blue-200 mx-5 my-3 rounded'>
+            <p>{b.id}</p>
+            <p>{b.propertyName}</p>
+            <p >{b.location}</p>
+            <p className={`w-max p-2 ${statusColor[b.status]}`}>{b.status}</p>
+            <p>{b.type}</p>
+          </div>
+        )
+      })}
+    </div>
+    <div className="overflow-x-auto w-full flex items-center justify-center">
+        <table className="w-full hidden md:block">
         <thead>
          <tr className="p-4 text-sm">
           <th className="p-2">ID</th>
@@ -47,8 +62,8 @@ const userBookings = bookings.filter(b => b.userId);// for now
          </tr>
         </thead>
         <tbody>
-          { userBookings.map((b, userId) => {
-            const key = userId
+          { userBookings.map((b) => {
+            const key = b.id
             return(
               <tr key={key} className="border text-center">
                  <td className="p-2 text-sm">{b.id}</td>
@@ -63,6 +78,7 @@ const userBookings = bookings.filter(b => b.userId);// for now
         </tbody>
       </table>
       </div>
+      </>
     )}
     </main>
     </div>
