@@ -1,4 +1,3 @@
-import Sidebar from "../../../components/Sidebar";
 import { useData } from "../../../Context/DataContext";
 import { useAuth } from "../../../Context/AuthContext";
 import InViewAnimator from "../../../components/InViewAnimator";

@@ -6,6 +6,7 @@ const DataContext = createContext();
 export const DataProvider = ({children}) => {
     const [bookings, setBookings] = useState([]);
     const [payments, setPayments] = useState([]);
+    const [accommodations, setAccommodations] = useState([])
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -13,12 +14,15 @@ export const DataProvider = ({children}) => {
             try{
                 const bookingsRes = await fetch("/bookings.json");
                 const paymentsRes = await fetch("/payments.json");
+                const accommodationsRes = await fetch("/accommodations.json");
 
                 const bookingsData = await bookingsRes.json();
                 const paymentsData = await paymentsRes.json();
+                const accommodationsData = await accommodationsRes.json();
 
                 setBookings(bookingsData.bookings);
                 setPayments(paymentsData.payments);
+                setAccommodations(accommodationsData.accommodations);
                 
                 
             } catch(error) {
@@ -32,7 +36,7 @@ export const DataProvider = ({children}) => {
     }, [])
 
     return(
-        <DataContext.Provider value={{bookings, payments, loading}}>
+        <DataContext.Provider value={{bookings, payments, accommodations, loading}}>
             {children}
         </DataContext.Provider>
     );

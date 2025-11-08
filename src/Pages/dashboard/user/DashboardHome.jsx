@@ -2,6 +2,7 @@ import { useData } from "../../../Context/DataContext";
 import { useAuth } from "../../../Context/AuthContext";
 import Topbar from "../../../components/Topbar";
 import InViewAnimator from "../../../components/InViewAnimator";
+import { Link, Navigate } from "react-router-dom";
 
 
 
@@ -30,7 +31,7 @@ function DashboardHome() {
   return (
     <>
     <Topbar />
-    <div className="bg-blue-200 p-2 h-screen w-full text-pretty">
+    <div className="bg-blue-200 p-2 w-full text-pretty">
       <div className="grid grid-cols-2 bg-white rounded p-4 
       items-center justify-evenly gap-2 md:grid-cols-3">
         <InViewAnimator>
@@ -52,6 +53,14 @@ function DashboardHome() {
        </div>
       </div> 
       </InViewAnimator>
+        <div className="bg-white my-4 rounded p-2">
+      <InViewAnimator>
+        <Link to="/accommodations">
+        <button className="w-max p-2 rounded bg-blue-200"
+          >View Accommodations</button>
+        </Link>
+      </InViewAnimator>
+        </div>
     </div>
     </>
     

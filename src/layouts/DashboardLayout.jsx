@@ -17,7 +17,7 @@ function DashboardLayout() {
        <Sidebar />
       <div className='flex flex-col flex-1 overflow-y-scroll'>
          {hide &&  <Topbar />}
-          <main>
+          <main className='h-screen'>
             <Outlet />
           </main>
       </div>

@@ -1,0 +1,281 @@
+{
+ "accommodations":
+    [
+  {
+    "id": 1,
+    "name": "Sunset Apartments",
+    "type": "apartment",
+    "location": "Lagos, Nigeria",
+    "price": 50000,
+    "rating": 4.5,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1011/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "parking"]
+  },
+  {
+    "id": 2,
+    "name": "Ocean View Hotel",
+    "type": "hotel",
+    "location": "Accra, Ghana",
+    "price": 75000,
+    "rating": 4.8,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1012/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "pool"]
+  },
+  {
+    "id": 3,
+    "name": "City Center Suites",
+    "type": "apartment",
+    "location": "Abuja, Nigeria",
+    "price": 60000,
+    "rating": 4.3,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1013/400/300",
+    "tags": ["midrange", "average", "booked", "wifi"]
+  },
+  {
+    "id": 4,
+    "name": "Grand Palace Hotel",
+    "type": "hotel",
+    "location": "Kano, Nigeria",
+    "price": 85000,
+    "rating": 4.7,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1014/400/300",
+    "tags": ["luxury", "high-rated", "available", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 5,
+    "name": "Riverside Apartments",
+    "type": "apartment",
+    "location": "Port Harcourt, Nigeria",
+    "price": 55000,
+    "rating": 4.4,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1015/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi"]
+  },
+  {
+    "id": 6,
+    "name": "Mountain View Hotel",
+    "type": "hotel",
+    "location": "Kigali, Rwanda",
+    "price": 72000,
+    "rating": 4.6,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1016/400/300",
+    "tags": ["midrange", "high-rated", "booked", "wifi", "pool"]
+  },
+  {
+    "id": 7,
+    "name": "Central Park Apartments",
+    "type": "apartment",
+    "location": "Abuja, Nigeria",
+    "price": 62000,
+    "rating": 4.2,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1017/400/300",
+    "tags": ["midrange", "average", "available", "wifi", "parking"]
+  },
+  {
+    "id": 8,
+    "name": "Sunrise Hotel",
+    "type": "hotel",
+    "location": "Lagos, Nigeria",
+    "price": 80000,
+    "rating": 4.9,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1018/400/300",
+    "tags": ["luxury", "high-rated", "available", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 9,
+    "name": "Cozy Nook Apartments",
+    "type": "apartment",
+    "location": "Ibadan, Nigeria",
+    "price": 45000,
+    "rating": 4.1,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1019/400/300",
+    "tags": ["budget", "average", "booked", "wifi"]
+  },
+  {
+    "id": 10,
+    "name": "Seaside Hotel",
+    "type": "hotel",
+    "location": "Accra, Ghana",
+    "price": 78000,
+    "rating": 4.5,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1020/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "pool"]
+  },
+  {
+    "id": 11,
+    "name": "Garden View Apartments",
+    "type": "apartment",
+    "location": "Lagos, Nigeria",
+    "price": 57000,
+    "rating": 4.6,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1021/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "parking"]
+  },
+  {
+    "id": 12,
+    "name": "City Lights Hotel",
+    "type": "hotel",
+    "location": "Kano, Nigeria",
+    "price": 83000,
+    "rating": 4.7,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1022/400/300",
+    "tags": ["luxury", "high-rated", "booked", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 13,
+    "name": "Hilltop Apartments",
+    "type": "apartment",
+    "location": "Port Harcourt, Nigeria",
+    "price": 60000,
+    "rating": 4.3,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1023/400/300",
+    "tags": ["midrange", "average", "available", "wifi"]
+  },
+  {
+    "id": 14,
+    "name": "Royal Palace Hotel",
+    "type": "hotel",
+    "location": "Lagos, Nigeria",
+    "price": 90000,
+    "rating": 4.8,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1024/400/300",
+    "tags": ["luxury", "high-rated", "available", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 15,
+    "name": "Downtown Apartments",
+    "type": "apartment",
+    "location": "Abuja, Nigeria",
+    "price": 65000,
+    "rating": 4.4,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1025/400/300",
+    "tags": ["midrange", "high-rated", "booked", "wifi", "parking"]
+  },
+  {
+    "id": 16,
+    "name": "Blue Lagoon Hotel",
+    "type": "hotel",
+    "location": "Kigali, Rwanda",
+    "price": 76000,
+    "rating": 4.6,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1026/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "pool"]
+  },
+  {
+    "id": 17,
+    "name": "Parkside Apartments",
+    "type": "apartment",
+    "location": "Ibadan, Nigeria",
+    "price": 48000,
+    "rating": 4.2,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1027/400/300",
+    "tags": ["budget", "average", "available", "wifi"]
+  },
+  {
+    "id": 18,
+    "name": "Sunset Boulevard Hotel",
+    "type": "hotel",
+    "location": "Accra, Ghana",
+    "price": 79000,
+    "rating": 4.7,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1028/400/300",
+    "tags": ["midrange", "high-rated", "booked", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 19,
+    "name": "Lakeview Apartments",
+    "type": "apartment",
+    "location": "Lagos, Nigeria",
+    "price": 61000,
+    "rating": 4.5,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1029/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "parking"]
+  },
+  {
+    "id": 20,
+    "name": "Grand Horizon Hotel",
+    "type": "hotel",
+    "location": "Kano, Nigeria",
+    "price": 85000,
+    "rating": 4.8,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1030/400/300",
+    "tags": ["luxury", "high-rated", "available", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 21,
+    "name": "Maple Leaf Apartments",
+    "type": "apartment",
+    "location": "Abuja, Nigeria",
+    "price": 63000,
+    "rating": 4.3,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1031/400/300",
+    "tags": ["midrange", "average", "booked", "wifi", "parking"]
+  },
+  {
+    "id": 22,
+    "name": "Crystal Palace Hotel",
+    "type": "hotel",
+    "location": "Port Harcourt, Nigeria",
+    "price": 88000,
+    "rating": 4.9,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1032/400/300",
+    "tags": ["luxury", "high-rated", "available", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 23,
+    "name": "Riverside Retreat Apartments",
+    "type": "apartment",
+    "location": "Lagos, Nigeria",
+    "price": 59000,
+    "rating": 4.4,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1033/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "parking"]
+  },
+  {
+    "id": 24,
+    "name": "Majestic Hotel",
+    "type": "hotel",
+    "location": "Abuja, Nigeria",
+    "price": 91000,
+    "rating": 4.8,
+    "availability": false,
+    "picture": "https://picsum.photos/id/1034/400/300",
+    "tags": ["luxury", "high-rated", "booked", "wifi", "pool", "parking"]
+  },
+  {
+    "id": 25,
+    "name": "Harbor View Apartments",
+    "type": "apartment",
+    "location": "Port Harcourt, Nigeria",
+    "price": 62000,
+    "rating": 4.5,
+    "availability": true,
+    "picture": "https://picsum.photos/id/1035/400/300",
+    "tags": ["midrange", "high-rated", "available", "wifi", "parking"]
+  }
+]
+ 
+}
