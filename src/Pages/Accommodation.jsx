@@ -27,7 +27,7 @@ function AccommodationDetails() {
       <h2 className="text-3xl font-bold my-2">{accommodation.name}</h2>
       <p className="text-2xl font-semibold">{accommodation.location}</p>
       <p className="text-2xl font-semibold">₦{accommodation.price.toLocaleString()}/night</p>
-      <p className="text-xl font-semibold"><StarRating rating={accommodation.rating}/></p>
+      <StarRating rating={accommodation.rating}/>
       <p className="flex flex-wrap items-center justify-center">{accommodation.tags.map((tag, index) => (
         <span
          key={index}
@@ -35,7 +35,9 @@ function AccommodationDetails() {
         >{tag}</span>
       ))}</p>
       <button className="bg-blue-500 text-2xl text-white p-2 w-2/3 md:w-96 
-      rounded-xl hover:bg-blue-300 duration-500">Book Now</button>
+      rounded-xl hover:bg-blue-300 duration-500"
+      onClick={() => navigate('/book')}
+      >Book Now</button>
      </div>
     </div>
     </>

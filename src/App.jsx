@@ -13,6 +13,7 @@ import Profile from './Pages/dashboard/user/Profile'
 import Register from './Pages/auth/Register'
 import AccomdationList from './Pages/AccomdationList'
 import AccommodationDetails from './Pages/Accommodation'
+import BookingForm from './components/BookingForm'
 function App() {
   return (
         <Routes>
@@ -30,6 +31,7 @@ function App() {
           </Route>
         <Route path='/accommodations' element={<AccomdationList />}/>
         <Route path='/accommodation/:id' element={<AccommodationDetails />} />
+        <Route path='/book' element={<ProtectedRoute allowedRoles={["user"]}><BookingForm /></ProtectedRoute>} />
         <Route path='/dashboard/provider' element={<ProtectedRoute allowedRoles={["provider"]}><ProviderDashboard /></ProtectedRoute>}/>
         <Route path='/dashboard/admin' element={<ProtectedRoute allowedRoles={["admin"]}><AdminDashboard /></ProtectedRoute>}/>
       </Routes>
