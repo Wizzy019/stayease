@@ -23,8 +23,8 @@ function UserProfile() {
 
   const userName = user?.name
 
-  const userBookings = bookings.filter(b => b.userId) // for now 
-  const userPayments = payments.filter(p => p.userId) // for now
+  const userBookings = bookings.filter(b => b.userId === user.id) // for now 
+  const userPayments = payments.filter(p => p.userId === user.id) // for now
 
  const activeBookings = userBookings.filter(b => b.status === "active");
   const totalUserPayments = userPayments.length
@@ -65,7 +65,7 @@ function UserProfile() {
       place-items-center gap-4 md:gap-1 py-2 px-4 '>
         <StatsCard label="Active Bookings" value={activeBookings.length}/>
         <StatsCard label="Total Payments" value={totalUserPayments}/>
-        <StatsCard label="Total Spent" value={totalSpent}/>
+        <StatsCard label="Total Spent" value={totalSpent.toLocaleString()}/>
       </div>
       </InViewAnimator>
 

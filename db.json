@@ -1,0 +1,590 @@
+{   
+  "accommodations": [
+  {
+    "id": 1,
+    "name": "Oakwood Residence",
+    "price": 2500000,
+    "location": "Lekki, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1501117716987-c8e4b11a8b9f",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["apartment", "luxury"],
+    "description": "Spacious 3-bedroom apartment with modern amenities and sea view."
+  },
+  {
+    "id": 2,
+    "name": "Sunshine Hotel",
+    "price": 1500000,
+    "location": "Ikeja, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["hotel", "budget"],
+    "description": "Comfortable hotel with great location and friendly staff."
+  },
+  {
+    "id": 3,
+    "name": "Beachfront Suites",
+    "price": 3000000,
+    "location": "Lekki, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["suite", "beach"],
+    "description": "Luxury suites with ocean view and private balconies."
+  },
+  {
+    "id": 4,
+    "name": "Mountain View Inn",
+    "price": 1800000,
+    "location": "Abuja",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["inn", "mountain"],
+    "description": "Cozy inn with scenic mountain views and hiking trails nearby."
+  },
+  {
+    "id": 5,
+    "name": "City Center Apartments",
+    "price": 2000000,
+    "location": "Victoria Island, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 4,
+    "tags": ["apartment", "city"],
+    "description": "Modern apartments in the heart of the city, close to amenities."
+  },
+  {
+    "id": 6,
+    "name": "Seaside Resort",
+    "price": 3500000,
+    "location": "Calabar",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["resort", "beach"],
+    "description": "Resort with private beach access, pool, and spa facilities."
+  },
+  {
+    "id": 7,
+    "name": "Garden View Hotel",
+    "price": 1400000,
+    "location": "Ibadan",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 3,
+    "tags": ["hotel", "garden"],
+    "description": "Budget-friendly hotel surrounded by lush gardens."
+  },
+  {
+    "id": 8,
+    "name": "Luxury Loft",
+    "price": 2700000,
+    "location": "Lekki, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 5,
+    "tags": ["loft", "luxury"],
+    "description": "Spacious loft apartment with modern interior design."
+  },
+  {
+    "id": 9,
+    "name": "Riverside Hotel",
+    "price": 1600000,
+    "location": "Port Harcourt",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 4,
+    "tags": ["hotel", "riverside"],
+    "description": "Hotel with river view rooms and excellent dining options."
+  },
+  {
+    "id": 10,
+    "name": "Downtown Suites",
+    "price": 2200000,
+    "location": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 5,
+    "tags": ["suite", "city"],
+    "description": "Luxury suites located downtown with full amenities."
+  },
+  {
+    "id": 11,
+    "name": "Serenity Apartments",
+    "price": 2100000,
+    "location": "Victoria Island, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["apartment", "modern"],
+    "description": "Elegant apartment with modern facilities and city view."
+  },
+  {
+    "id": 12,
+    "name": "Palm Beach Resort",
+    "price": 3300000,
+    "location": "Calabar",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["resort", "beach"],
+    "description": "Beachfront resort with pool, spa, and luxury rooms."
+  },
+  {
+    "id": 13,
+    "name": "Hilltop Inn",
+    "price": 1700000,
+    "location": "Abuja",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["inn", "hilltop"],
+    "description": "Cozy inn located on a hill with panoramic views."
+  },
+  {
+    "id": 14,
+    "name": "Skyline Hotel",
+    "price": 2800000,
+    "location": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 5,
+    "tags": ["hotel", "skyline"],
+    "description": "Luxury hotel with rooftop pool and city skyline views."
+  },
+  {
+    "id": 15,
+    "name": "Green Park Suites",
+    "price": 1900000,
+    "location": "Ibadan",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["suite", "garden"],
+    "description": "Comfortable suites surrounded by lush gardens."
+  },
+  {
+    "id": 16,
+    "name": "Coral Bay Resort",
+    "price": 3400000,
+    "location": "Calabar",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["resort", "coral"],
+    "description": "Exclusive resort with private beach and luxury rooms."
+  },
+  {
+    "id": 17,
+    "name": "Riverside Apartments",
+    "price": 2100000,
+    "location": "Port Harcourt",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 4,
+    "tags": ["apartment", "riverside"],
+    "description": "Modern apartments with river views and city access."
+  },
+  {
+    "id": 18,
+    "name": "Oceanview Hotel",
+    "price": 3200000,
+    "location": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["hotel", "ocean"],
+    "description": "Luxury hotel with ocean view rooms and private balconies."
+  },
+  {
+    "id": 19,
+    "name": "Cityscape Suites",
+    "price": 2300000,
+    "location": "Victoria Island, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 5,
+    "tags": ["suite", "city"],
+    "description": "Modern suites located in the city center with top amenities."
+  },
+  {
+    "id": 20,
+    "name": "Hillside Inn",
+    "price": 1800000,
+    "location": "Abuja",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["inn", "hillside"],
+    "description": "Peaceful inn on a hillside with scenic views."
+  },
+  {
+    "id": 21,
+    "name": "Lagoon View Hotel",
+    "price": 2700000,
+    "location": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["hotel", "lagoon"],
+    "description": "Hotel with lagoon view, pool, and modern amenities."
+  },
+  {
+    "id": 22,
+    "name": "Sunset Suites",
+    "price": 2200000,
+    "location": "Lekki, Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 5,
+    "tags": ["suite", "sunset"],
+    "description": "Luxury suites with stunning sunset views over the city."
+  },
+  {
+    "id": 23,
+    "name": "Coral Reef Inn",
+    "price": 1900000,
+    "location": "Calabar",
+    "images": [
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511",
+      "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    ],
+    "rating": 4,
+    "tags": ["inn", "coral"],
+    "description": "Charming inn near the coral reefs with cozy rooms."
+  },
+  {
+    "id": 24,
+    "name": "Downtown Apartments",
+    "price": 2100000,
+    "location": "Lagos",
+    "images": [
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1",
+      "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+    ],
+    "rating": 4,
+    "tags": ["apartment", "city"],
+    "description": "Modern downtown apartments with all essential amenities."
+  },
+  {
+    "id": 25,
+    "name": "Palm Grove Resort",
+    "price": 3400000,
+    "location": "Calabar",
+    "images": [
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb",
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+    ],
+    "rating": 5,
+    "tags": ["resort", "palm"],
+    "description": "Exclusive resort surrounded by palm trees with luxury rooms."
+  }
+],
+
+"bookings": [
+  {
+    "id": 1,
+    "userId": 1,
+    "bookingId": 1,
+    "type": "apartment",
+    "propertyName": "Oakwood Residence",
+    "location": "Lekki, Lagos",
+    "price": 2500000,
+    "status": "active",
+    "startDate": "2025-01-10",
+    "endDate": "2025-01-20",
+    "bookedAt": "2024-12-20"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "bookingId": 2,
+    "type": "hotel",
+    "propertyName": "Sunshine Hotel",
+    "location": "Ikeja, Lagos",
+    "price": 1500000,
+    "status": "active",
+    "startDate": "2025-02-05",
+    "endDate": "2025-02-12",
+    "bookedAt": "2025-01-25"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "bookingId": 3,
+    "type": "suite",
+    "propertyName": "Beachfront Suites",
+    "location": "Lekki, Lagos",
+    "price": 3000000,
+    "status": "active",
+    "startDate": "2025-03-10",
+    "endDate": "2025-03-18",
+    "bookedAt": "2025-02-20"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "bookingId": 4,
+    "type": "inn",
+    "propertyName": "Mountain View Inn",
+    "location": "Abuja",
+    "price": 1800000,
+    "status": "active",
+    "startDate": "2025-04-01",
+    "endDate": "2025-04-07",
+    "bookedAt": "2025-03-15"
+  },
+  {
+    "id": 5,
+    "userId": 2,
+    "bookingId": 5,
+    "type": "apartment",
+    "propertyName": "City Center Apartments",
+    "location": "Victoria Island, Lagos",
+    "price": 2000000,
+    "status": "active",
+    "startDate": "2025-05-10",
+    "endDate": "2025-05-20",
+    "bookedAt": "2025-04-25"
+  },
+  {
+    "id": 6,
+    "userId": 3,
+    "bookingId": 6,
+    "type": "resort",
+    "propertyName": "Seaside Resort",
+    "location": "Calabar",
+    "price": 3500000,
+    "status": "active",
+    "startDate": "2025-06-15",
+    "endDate": "2025-06-25",
+    "bookedAt": "2025-06-01"
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "bookingId": 7,
+    "type": "hotel",
+    "propertyName": "Garden View Hotel",
+    "location": "Ibadan",
+    "price": 1400000,
+    "status": "active",
+    "startDate": "2025-07-01",
+    "endDate": "2025-07-10",
+    "bookedAt": "2025-06-20"
+  },
+  {
+    "id": 8,
+    "userId": 2,
+    "bookingId": 8,
+    "type": "loft",
+    "propertyName": "Luxury Loft",
+    "location": "Lekki, Lagos",
+    "price": 2700000,
+    "status": "active",
+    "startDate": "2025-08-05",
+    "endDate": "2025-08-12",
+    "bookedAt": "2025-07-25"
+  },
+  {
+    "id": 9,
+    "userId": 3,
+    "bookingId": 9,
+    "type": "hotel",
+    "propertyName": "Riverside Hotel",
+    "location": "Port Harcourt",
+    "price": 1600000,
+    "status": "active",
+    "startDate": "2025-09-10",
+    "endDate": "2025-09-17",
+    "bookedAt": "2025-08-28"
+  },
+  {
+    "id": 10,
+    "userId": 1,
+    "bookingId": 10,
+    "type": "suite",
+    "propertyName": "Downtown Suites",
+    "location": "Lagos",
+    "price": 2200000,
+    "status": "active",
+    "startDate": "2025-10-01",
+    "endDate": "2025-10-10",
+    "bookedAt": "2025-09-15"
+  }
+],
+
+"payments": [
+  {
+    "id": 1,
+    "userId": 1,
+    "bookingId": 1,
+    "amount": 2500000,
+    "status": "paid",
+    "date": "2024-12-20",
+    "method": "bank transfer",
+    "reference": "STY-1001"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "bookingId": 2,
+    "amount": 1500000,
+    "status": "paid",
+    "date": "2025-01-25",
+    "method": "bank transfer",
+    "reference": "STY-1002"
+  },
+  {
+    "id": 3,
+    "userId": 3,
+    "bookingId": 3,
+    "amount": 3000000,
+    "status": "paid",
+    "date": "2025-02-20",
+    "method": "bank transfer",
+    "reference": "STY-1003"
+  },
+  {
+    "id": 4,
+    "userId": 1,
+    "bookingId": 4,
+    "amount": 1800000,
+    "status": "paid",
+    "date": "2025-03-15",
+    "method": "bank transfer",
+    "reference": "STY-1004"
+  },
+  {
+    "id": 5,
+    "userId": 2,
+    "bookingId": 5,
+    "amount": 2000000,
+    "status": "paid",
+    "date": "2025-04-25",
+    "method": "bank transfer",
+    "reference": "STY-1005"
+  },
+  {
+    "id": 6,
+    "userId": 3,
+    "bookingId": 6,
+    "amount": 3500000,
+    "status": "paid",
+    "date": "2025-06-01",
+    "method": "bank transfer",
+    "reference": "STY-1006"
+  },
+  {
+    "id": 7,
+    "userId": 1,
+    "bookingId": 7,
+    "amount": 1400000,
+    "status": "paid",
+    "date": "2025-06-20",
+    "method": "bank transfer",
+    "reference": "STY-1007"
+  },
+  {
+    "id": 8,
+    "userId": 2,
+    "bookingId": 8,
+    "amount": 2700000,
+    "status": "paid",
+    "date": "2025-07-25",
+    "method": "bank transfer",
+    "reference": "STY-1008"
+  },
+  {
+    "id": 9,
+    "userId": 3,
+    "bookingId": 9,
+    "amount": 1600000,
+    "status": "paid",
+    "date": "2025-08-28",
+    "method": "bank transfer",
+    "reference": "STY-1009"
+  },
+  {
+    "id": 10,
+    "userId": 1,
+    "bookingId": 10,
+    "amount": 2200000,
+    "status": "paid",
+    "date": "2025-09-15",
+    "method": "bank transfer",
+    "reference": "STY-1010"
+  }
+]
+}

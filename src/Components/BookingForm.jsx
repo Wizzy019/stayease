@@ -71,7 +71,7 @@ function BookingForm() {
   return (
     <div>
         
-     <FontAwesomeIcon icon={faArrowAltCircleLeft} className="fixed right-0 m-3 text-2xl" onClick={() => navigate('/accommodations/')} />
+     <FontAwesomeIcon icon={faArrowAltCircleLeft} className="fixed left-0 m-3 text-2xl" onClick={() => navigate('/accommodations/')} />
         <form 
             onSubmit={handleBooking}
             className='flex flex-col py-30 px-2 items-center'>

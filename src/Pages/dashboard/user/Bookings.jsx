@@ -1,10 +1,12 @@
 import { useData } from "../../../Context/DataContext";
 import { useAuth } from "../../../Context/AuthContext";
 import InViewAnimator from "../../../components/InViewAnimator";
+import { useNavigate } from "react-router-dom";
 
 
 function Bookings() {
 
+  const navigate = useNavigate()
 
 const { user } = useAuth(); //filter function will be added later to use useAuth
 
@@ -28,7 +30,10 @@ const userBookings = bookings.filter(b => b.userId === user.id);
     <main className="p-2 md:min-w-2/3 md:flex md:flex-col md:items-center md:justify-center ">
     <div className="flex flex-1 items-center justify-between w-full my-4">
       <h1 className="text-3xl font-bold">Bookings</h1>  
-      <button className="bg-blue-500 text-white p-2 rounded hover:bg-blue-400 duration-500">New Booking</button>
+      <button className="bg-blue-500 text-white p-2 
+      rounded hover:bg-blue-400 duration-500"
+      onClick={() => navigate("/accommodations")}
+      >New Booking</button>
     </div>
     <input type="search" placeholder="Search..." className=" p-2 rounded border w-full"/>
     {userBookings.length === 0 ? ( // for now...

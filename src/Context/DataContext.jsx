@@ -12,17 +12,17 @@ export const DataProvider = ({children}) => {
     useEffect(() => {
         const fetchData = async () => {
             try{
-                const bookingsRes = await fetch("/bookings.json");
-                const paymentsRes = await fetch("/payments.json");
-                const accommodationsRes = await fetch("/accommodations.json");
+                const bookingsRes = await fetch("http://localhost:5000/bookings");
+                const paymentsRes = await fetch("http://localhost:5000/payments");
+                const accommodationsRes = await fetch("http://localhost:5000/accommodations");
 
                 const bookingsData = await bookingsRes.json();
                 const paymentsData = await paymentsRes.json();
                 const accommodationsData = await accommodationsRes.json();
 
-                setBookings(bookingsData.bookings);
-                setPayments(paymentsData.payments);
-                setAccommodations(accommodationsData.accommodations);
+                setBookings(bookingsData);
+                setPayments(paymentsData);
+                setAccommodations(accommodationsData);
                 
                 
             } catch(error) {

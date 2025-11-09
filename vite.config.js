@@ -12,6 +12,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [react(), tailwindcss()],
-    base: isVercel || mode === 'development' ? '/' : '/stayease/',
+    base: (isVercel || mode === 'development') ? '/' : '/stayease/',
   }
 })
