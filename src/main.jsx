@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
    <StrictMode>
     <AuthProvider>
       <DataProvider>
-      <BrowserRouter>
+      <BrowserRouter basename='/stayease/'>
         <App />
        </BrowserRouter>
       </DataProvider>
